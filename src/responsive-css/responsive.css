@@ -1,0 +1,870 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .top-navbar {
+    background: black;
+  }
+
+  .top-second-section h1 {
+    /* font-size: 45px; */
+    font-size: 2.5rem;
+  }
+
+  .top-second-section h2 {
+    /* font-size: 45px; */
+    font-size: 2.5rem;
+  }
+
+  /* number group css */
+  .number-section h1 {
+    /* font-size: 90px; */
+    font-size: 3.5rem;
+  }
+
+  /* commitment css */
+  .commitment h1 {
+    /* font-size: 55px; */
+    font-size: 2.5rem;
+  }
+  .commitment h2 {
+    /* font-size: 50px; */
+    font-size: 2.5rem;
+  }
+
+  /* card group area css */
+  .card-groups-section .card-title .top-line,
+  .card-groups-section .card-title .bottom-line {
+    width: 70%;
+    height: 3px;
+  }
+
+  .card-groups-section .card-title h1 {
+    /* font-size: 50px; */
+    font-size: 2.5rem;
+  }
+
+  .card-groups-section .card-title .top-line {
+    margin-left: -20%;
+  }
+
+  .header-area .logo img {
+    width: 5.5rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  .sticky .logo img {
+    width: 5rem;
+  }
+
+  .header-area .top-navbar .d-flex {
+    position: fixed;
+    flex-direction: column;
+    row-gap: 3rem;
+    text-align: center;
+    background: rgba(20, 33, 61, 0.8);
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    box-sizing: border-box;
+    transition: 1s ease-in-out;
+    z-index: 99;
+  }
+
+  /* this class will be active navlink area when icon bars */
+  .header-area.active .top-navbar .d-flex {
+    transform: translateX(0%) !important;
+    opacity: 1;
+  }
+
+  .header-area .icon {
+    display: block;
+  }
+
+  .header-area.active #bars {
+    display: none;
+  }
+
+  .header-area.active #xmark {
+    display: block;
+    z-index: 999;
+    opacity: 1;
+  }
+
+  /* About us section css */
+
+  .who-we-are {
+    grid-column: 1 /13;
+    position: absolute;
+    top: 36%;
+    transform: rotate(270deg);
+    left: -11%;
+  }
+
+  .who-we-are h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-us {
+    background: #fca311;
+    display: grid;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2;
+    grid-area: 1/1;
+    grid-column: 1 / 5;
+    height: 170px;
+  }
+
+  .brainnest-paregraph {
+    margin-top: -10px;
+    grid-row: 2;
+    grid-area: 2/5;
+    grid-column: 4/ 13;
+    margin-bottom: 105px;
+  }
+
+  .our-mission {
+    margin-top: 20px;
+    grid-row: 3;
+    grid-area: 3/1;
+    grid-column: 1/13;
+  }
+
+  .our-mission h1 {
+    font-size: 2.5rem;
+  }
+
+  .bottom-horizantal-line {
+    height: 5px;
+    background: #fca311;
+    grid-row: 4;
+    grid-area: 3/1;
+    grid-column: 1/10;
+  }
+
+  .form-tackline {
+    margin-top: 15px;
+    grid-row: 3;
+    grid-area: 4/1;
+    grid-column: 1/10;
+  }
+
+  .top-horizantal-line {
+    display: none;
+  }
+
+  .form-tackline::before {
+    display: none;
+  }
+
+  .brainnest-paregraph::before {
+    top: -45px;
+    left: -40px;
+  }
+
+  .about-us h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  /* business section css */
+  .business-section h1 {
+    /* font-size: 45px; */
+    font-size: 2.3rem;
+  }
+
+  .business-section h2 {
+    /* font-size: 45px; */
+    font-size: 2.3rem;
+  }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+  .who-we-are {
+    top: 40%;
+    left: -9%;
+  }
+
+  .form-tackline {
+    grid-column: 1/13;
+  }
+}
+
+/* Extra small devices (phones, 542px and down) */
+@media only screen and (max-width: 542px) {
+  .who-we-are {
+    top: 38%;
+    left: -9%;
+  }
+
+  .form-tackline {
+    grid-column: 1/13;
+  }
+}
+
+/* Extra small devices (phones, 450px and down) */
+@media only screen and (max-width: 450px) {
+  .about-us {
+    height: 145px;
+  }
+
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .brainnest-paregraph::before {
+    top: -35px;
+  }
+
+  .who-we-are {
+    top: 36%;
+    left: -13%;
+  }
+  .brainnest-paregraph {
+    margin-bottom: 80px;
+  }
+
+  .form-tackline {
+    grid-column: 1/13;
+  }
+}
+
+/* Extra small devices (phones, 430px and down) */
+@media only screen and (max-width: 430px) {
+  .about-us {
+    height: 145px;
+  }
+
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .brainnest-paregraph::before {
+    top: -35px;
+  }
+
+  .who-we-are {
+    top: 36%;
+    left: -15%;
+  }
+}
+
+/* Extra small devices (phones, 420px and down) */
+@media only screen and (max-width: 420px) {
+  .about-us {
+    height: 145px;
+  }
+
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .brainnest-paregraph::before {
+    top: -35px;
+  }
+
+  .who-we-are {
+    top: 35%;
+    left: -15%;
+  }
+
+  .brainnest-paregraph {
+    margin-bottom: 80px;
+  }
+}
+/* Extra small devices (phones, 390px and down) */
+@media only screen and (max-width: 390px) {
+  .about-us {
+    height: 130px;
+  }
+
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .brainnest-paregraph::before {
+    top: -35px;
+  }
+
+  .who-we-are {
+    top: 33%;
+    left: -19%;
+  }
+
+  .brainnest-paregraph {
+    margin-bottom: 60px;
+  }
+}
+
+/* Extra small devices (phones, 360px and down) */
+@media only screen and (max-width: 360px) {
+  .about-us {
+    height: 130px;
+  }
+
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .brainnest-paregraph::before {
+    top: -35px;
+  }
+
+  .who-we-are {
+    top: 32%;
+    left: -20%;
+  }
+
+  .brainnest-paregraph {
+    margin-bottom: 30px;
+  }
+
+  .business-section h1 {
+    /* font-size: 45px; */
+    font-size: 2.2rem;
+  }
+
+  .commitment h1 {
+    /* font-size: 55px; */
+    font-size: 2.4rem;
+  }
+
+  .form-tackline {
+    grid-column: 1/13;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+
+  /* Header css */
+  .header-area .logo img {
+    width: 5.5rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  /* add this class navber when window will scroll */
+
+  .top-navbar {
+    background: black;
+  }
+
+  .header-area .top-navbar .d-flex {
+    position: fixed;
+    flex-direction: column;
+    row-gap: 3rem;
+    text-align: center;
+    background: rgba(20, 33, 62, 0.4);
+    padding: 20px;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    width: 330px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    right: 0px;
+    top: 0px;
+    transform: translateX(100%);
+    opacity: 0;
+    box-sizing: border-box;
+    transition: 1s ease-in-out;
+    z-index: 99;
+  }
+
+  /* this class will be active navlink area when icon bars */
+  .header-area.active .top-navbar .d-flex {
+    transform: translateX(0%) !important;
+    opacity: 1 !important;
+  }
+
+  .header-area.active #bars {
+    display: none;
+  }
+
+  .header-area.active #xmark {
+    display: block;
+    z-index: 999;
+    opacity: 1;
+  }
+
+  /* this class will be active navlink area when icon bars */
+  .header-area .icon {
+    display: block;
+  }
+
+  /* About us section css */
+
+  .who-we-are {
+    grid-column: 1 /13;
+    position: absolute;
+    top: 38%;
+    left: -11%;
+    transform: rotate(270deg);
+  }
+
+  .who-we-are h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-us {
+    background: #fca311;
+    display: grid;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2;
+    grid-area: 1/1;
+    grid-column: 1 / 5;
+    height: 170px;
+  }
+
+  .about-us h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+  }
+
+  .brainnest-paregraph {
+    margin-top: -10px;
+    grid-row: 2;
+    grid-area: 2/5;
+    grid-column: 4/ 13;
+    margin-bottom: 105px;
+  }
+
+  .our-mission {
+    margin-top: 20px;
+    grid-row: 3;
+    grid-area: 3/1;
+    grid-column: 1/13;
+  }
+
+  .our-mission h1 {
+    font-size: 2.5rem;
+  }
+
+  .bottom-horizantal-line {
+    height: 5px;
+    background: #fca311;
+    grid-row: 4;
+    grid-area: 3/1;
+    grid-column: 1/10;
+  }
+
+  .form-tackline {
+    margin-top: 15px;
+    grid-row: 3;
+    grid-area: 4/1;
+    grid-column: 1/10;
+  }
+
+  .top-horizantal-line {
+    display: none;
+  }
+
+  .form-tackline::before {
+    display: none;
+  }
+
+  .brainnest-paregraph::before {
+    top: -45px;
+    left: -40px;
+  }
+
+  .card-groups-section .card-title .top-line {
+    margin-left: -8%;
+  }
+
+  .card-groups-section .card-title .top-line,
+  .card-groups-section .card-title .bottom-line {
+    width: 58%;
+    height: 5px;
+    background: white;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  /* .header-area .top-navbar .d-flex:first-child {
+    padding-top: 20%;
+  } */
+
+  /* Header css */
+  .header-area .top-navbar .d-flex {
+    position: static;
+    flex-direction: row;
+    row-gap: 3px;
+    text-align: start;
+    background: rgba(0, 0, 0, 0);
+    padding: 0px;
+    width: 100%;
+    height: 0%;
+    font-size: 1.2rem;
+    top: 0;
+    right: 0;
+    transform: translateX(0%) !important;
+    opacity: 1 !important;
+  }
+
+  .header-area .top-navbar .d-flex:first-child {
+    padding-top: 0%;
+  }
+
+  .header-area .icon {
+    display: none;
+  }
+
+  .card-groups-section .card-title .top-line {
+    margin-left: -1%;
+  }
+
+  .card-groups-section .card-title .top-line,
+  .card-groups-section .card-title .bottom-line {
+    width: 52%;
+    height: 5px;
+    background: white;
+  }
+
+  /* About us section css */
+  .who-we-are {
+    grid-column: 1 /13;
+    position: static;
+    top: 0%;
+    transform: rotate(0deg);
+    left: 0%;
+    grid-area: 1/1;
+    grid-column: 2/13;
+  }
+
+  .who-we-are h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+  }
+
+  .top-horizantal-line {
+    display: block;
+    grid-row: 2;
+    grid-area: 2/1;
+    grid-column: 5/13;
+  }
+
+  .form-tackline::before {
+    display: block;
+    top: -20%;
+  }
+
+  .about-us {
+    background: #fca311;
+    display: grid;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-row: 3;
+    grid-area: 3/4;
+    grid-column: 5/8;
+    height: 200px;
+  }
+
+  .our-mission h1 {
+    font-size: 3rem;
+  }
+
+  .about-us h2 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+  }
+
+  .brainnest-paregraph {
+    margin-top: 24px;
+    grid-row: 2;
+    grid-area: 3/8;
+    grid-column: 8/ 13;
+    margin-bottom: 15px;
+  }
+
+  .bottom-horizantal-line {
+    height: 5px;
+    background: #fca311;
+    grid-row: 4;
+    grid-area: 4/1;
+    grid-column: 1/8;
+    margin-top: -17%;
+  }
+
+  .our-mission {
+    margin-top: 20px;
+    grid-row: 3;
+    grid-area: 4/7;
+    grid-column: 6/13;
+  }
+
+  .form-tackline {
+    margin-top: -56px;
+    grid-row: 3;
+    grid-area: 4/1;
+    grid-column: 1/5;
+  }
+
+  .brainnest-paregraph p {
+    text-align: justify;
+    line-height: 25px;
+    letter-spacing: 0.5s;
+    font-weight: 400;
+  }
+
+  .brainnest-paregraph::before {
+    top: -168px;
+    left: -35px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+
+  /* add this class navber when window will scroll */
+  /* .sticky .top-second-section {
+    margin-top: 19.8rem;
+  } */
+  .sticky .header-area .logo img {
+    width: 5.5rem;
+  }
+  /* add this class navber when window will scroll */
+
+  /* Header area css */
+  .top-navbar {
+    background: #14213d;
+  }
+
+  .header-area .logo img {
+    width: 6.5rem;
+  }
+
+  .header-area .top-navbar .d-flex {
+    position: static;
+    flex-direction: row;
+    row-gap: 3px;
+    text-align: start;
+    background: #14213d;
+    padding: 0px;
+    width: 100%;
+    height: 0%;
+    font-size: 1.2rem;
+    top: 0;
+    right: 0;
+    transform: translateX(0%);
+    box-sizing: border-box;
+  }
+
+  .sticky .top-navbar .d-flex {
+    background: black !important;
+  }
+
+  .header-area .top-navbar .d-flex:first-child {
+    padding-top: 0%;
+  }
+
+  .header-area .icon {
+    display: none;
+  }
+
+  /* About us section css */
+  .who-we-are {
+    grid-column: 1 /13;
+    grid-area: 1/1;
+    grid-column: 2/13;
+  }
+
+  .who-we-are h1 {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+  }
+
+  .about-us {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    grid-row: 3;
+    grid-area: 3/4;
+    grid-column: 5/8;
+    height: 250px;
+  }
+
+  .brainnest-paregraph {
+    margin-top: 35px;
+    grid-row: 2;
+    grid-area: 3/8;
+    grid-column: 8/ 12;
+    margin-bottom: 15px;
+  }
+
+  .about-us h2 {
+    font-size: 2.8rem;
+  }
+
+  .bottom-horizantal-line {
+    grid-row: 4;
+    grid-area: 4/1;
+    grid-column: 2/8;
+    margin-top: -2%;
+  }
+
+  .form-tackline {
+    margin-top: 4px;
+    grid-row: 3;
+    grid-area: 4/1;
+    grid-column: 2/5;
+  }
+
+  .top-horizantal-line {
+    display: block;
+    grid-row: 2;
+    grid-area: 2/1;
+    grid-column: 5/12;
+  }
+
+  .brainnest-paregraph::before,
+  .form-tackline::before {
+    height: 350px;
+  }
+
+  .brainnest-paregraph::before {
+    top: -200px;
+    left: -40px;
+  }
+
+  .our-mission {
+    margin-top: 50px;
+    grid-row: 3;
+    grid-area: 4/7;
+    grid-column: 7/13;
+  }
+
+  .our-mission h1 {
+    font-size: 3.5rem;
+  }
+
+  .form-tackline::before {
+    display: block;
+    top: -15%;
+  }
+
+  .card-groups-section .card-title .top-line {
+    margin-left: 10%;
+  }
+
+  .card-groups-section .card-title .top-line,
+  .card-groups-section .card-title .bottom-line {
+    width: 40%;
+    height: 5px;
+    background: white;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+
+  .header-area .logo img {
+    width: 7.5rem;
+  }
+
+  /* About us section css */
+  .about-us {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    grid-row: 3;
+    grid-area: 3/4;
+    grid-column: 5/8;
+    height: 250px;
+  }
+
+  .who-we-are h1 {
+    font-size: 3.5rem;
+    margin-bottom: 70px;
+  }
+
+  .form-tackline::before {
+    display: block;
+    top: -30%;
+  }
+
+  .brainnest-paregraph::before {
+    top: -225px;
+    left: -40px;
+  }
+
+  .about-us h2 {
+    font-size: 3.3rem;
+  }
+}
+
+/* Extra Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1400px) {
+  .header-area .logo img {
+    width: 8.5rem;
+  }
+
+  /* About us section css */
+  .who-we-are {
+    grid-column: 1 /13;
+    grid-area: 1/1;
+    grid-column: 3/13;
+  }
+
+  .about-us {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    grid-row: 3;
+    grid-area: 3/4;
+    grid-column: 5/8;
+    height: 310px;
+  }
+
+  .brainnest-paregraph p {
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 0.5s;
+    font-weight: 400;
+  }
+
+  .brainnest-paregraph {
+    margin-top: 35px;
+    grid-row: 2;
+    grid-area: 3/8;
+    grid-column: 8/ 12;
+    margin-bottom: 15px;
+  }
+}

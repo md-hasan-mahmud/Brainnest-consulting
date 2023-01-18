@@ -1,0 +1,618 @@
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.container {
+  /* width: 1100px; */
+  min-width: 350px;
+}
+
+/* ********************************************* */
+/* Header area css start */
+/* ********************************************* */
+.header-area {
+  overflow: hidden;
+  background: #14213d;
+}
+
+.header-area .logo img {
+  width: 7.5rem;
+}
+
+#top-navber {
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.header-area #img-section {
+  transform: translateX(-80%);
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+/* this class add img-section  when window will be onload */
+.img-section-left-to-right-slide {
+  opacity: 1 !important;
+  transform: translateX(0%) !important;
+}
+
+/* add this class navber when window will scroll start */
+.sticky #top-navber {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0) !important;
+  box-shadow: 0px 0px 15px 0px rgb(252, 163, 17, 0.5);
+  z-index: 99;
+}
+
+.header-area .d-flex a {
+  transition: 0.3s ease-in-out;
+  color: white;
+  font-weight: 400;
+}
+
+.header-area .d-flex a.active {
+  color: #fca311;
+}
+
+.header-area .d-flex a:hover {
+  color: #fca311;
+}
+
+/* icon css */
+.header-area .icon {
+  color: #fca311;
+  font-size: 2.5rem;
+  position: absolute;
+  width: 50px;
+  right: 20px;
+  top: 18px;
+  transform: translateX(80%);
+  opacity: 0;
+  transition: 1s ease-in-out;
+  display: none;
+}
+
+/* this class add icon tag  when window will be onload */
+.icon-right-to-left-slide {
+  transform: translateX(0%) !important;
+  opacity: 1 !important;
+  z-index: 999;
+}
+
+.header-area .icon i {
+  position: inherit;
+}
+
+.header-area .icon #xmark {
+  opacity: 0;
+  z-index: -99;
+}
+
+.header-area .icon:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* top-second-section css  start*/
+
+.header-area #top-second-header {
+  transform: translateY(50%);
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+
+/* this class add top-second-header tag when window will be onload */
+.top-second-header-bottom-to-top-slide {
+  transform: translateY(0%) !important;
+  opacity: 1 !important;
+}
+
+.top-second-section h1 {
+  color: #fca311;
+  font-weight: 700;
+  /* font-size: 45px; */
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+}
+
+.top-second-section h2 {
+  /* font-size: 45px; */
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+}
+
+.top-second-section p {
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.top-second-section p span {
+  font-weight: 700;
+  color: #fca311;
+  letter-spacing: 0.1;
+}
+/* top-second-section css end*/
+/* Header area css end */
+
+/* ********************************************* */
+/* Main-area css start */
+/* ********************************************* */
+.main {
+  overflow: hidden;
+}
+
+/* ********************************************* */
+/* number section css start */
+/* ********************************************* */
+.number-section {
+  background: url("../../img/background/background.jpg1.jpg") no-repeat center
+    center/ 100%;
+  position: relative;
+}
+
+.number-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(24, 32, 50, 0.93);
+}
+
+.number-section .number-group {
+  transform: scale(0.2);
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+/* animation class add when window will be scroll */
+.numshow {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+.number-section h1 {
+  /* font-size: 90px; */
+  font-size: 5.5rem;
+  font-size: 700;
+  color: #fca311;
+}
+/* number section css end */
+
+/* ********************************************* */
+/* about us section css start*/
+/* ********************************************* */
+.abut-us-section {
+  background: #14213d;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 5px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.who-we-are {
+  grid-column: 2 /13;
+  opacity: 0;
+  transition: 2s ease-in-out;
+}
+/* this class add who we are section when window will be scroll */
+.translateX {
+  opacity: 1 !important;
+}
+
+.who-we-are h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.top-horizantal-line {
+  margin-top: 10px;
+  height: 5px;
+  background: #fca311;
+  grid-row: 2;
+  grid-area: 2/4;
+  grid-column: 4/13;
+  transform: translateX(-80%);
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+/* this class add top horizantal section when window will be scroll */
+.top-horizantal-line-translateX {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.about-us {
+  background: #fca311;
+  display: grid;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2;
+  grid-column: 4 / 7;
+  height: 250px;
+}
+
+.about-us-content {
+  transform: translateX(-80%);
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+/* this class add about us section when window will be scroll */
+.content-translateX {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.bottom-horizantal-line {
+  height: 5px;
+  background: #fca311;
+  grid-row: 4;
+  grid-area: 3/1;
+  grid-column: 1/7;
+  transform: translateX(-80%);
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+/* this class add bottom horizantal section when window will be scroll */
+.bottom-horizantal-translateX {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.about-us h2 {
+  text-transform: uppercase;
+}
+
+.about-us .line {
+  width: 80%;
+  background: black;
+  margin: 0 auto;
+  height: 4px;
+}
+
+.brainnest-paregraph {
+  margin-top: 40px;
+  grid-row: 2;
+  grid-area: 2/7;
+  grid-column: 7/ 13;
+  transform: translateY(-60%);
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+
+/* this class add brainnest-paregraph section when window will be scroll */
+.brainnest-paregraph-translateY {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.brainnest-paregraph p {
+  text-align: justify;
+  line-height: 30px;
+  letter-spacing: 0.5s;
+  font-weight: 400;
+}
+
+.brainnest-paregraph p span {
+  color: #fca311;
+  font-weight: 500;
+}
+
+.form-tackline {
+  margin-top: 20px;
+  grid-row: 3;
+  grid-area: 3/1;
+  grid-column: 1/4;
+  transform: translateY(60%);
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+
+/* this class add form-tackline section when window will be scroll */
+.form-tackline-translateY {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.form-tackline p {
+  text-align: justify;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.5s;
+}
+
+.our-mission {
+  margin-top: 20px;
+  grid-row: 3;
+  grid-area: 3/5;
+  grid-column: 5/13;
+  transform: translateX(50%);
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+/* this class add Our mission section when window will be scroll */
+.our-mission-translateX {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.brainnest-paregraph,
+.form-tackline {
+  position: relative;
+}
+
+.brainnest-paregraph::before,
+.form-tackline::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  background: #fca311;
+  height: 300px;
+}
+
+.brainnest-paregraph::before {
+  top: -140px;
+  left: -40px;
+}
+
+.form-tackline::before {
+  right: -40px;
+  top: -100px;
+}
+
+/* about us section css end*/
+
+/* ****************************************** */
+/* Commitment section css start */
+/* ****************************************** */
+
+.commitment #translate-y {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
+
+/* this class add in our commitment section  when window scroll  */
+.translateY {
+  opacity: 1 !important;
+  transform: translateY(0%) !important;
+}
+
+.commitment {
+  overflow: hidden;
+  background: url("../../img/background/background.jpg1.jpg") no-repeat center
+    center/cover;
+  position: relative;
+}
+
+.commitment::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #141825d8;
+}
+
+.commitment h1 {
+  /* font-size: 55px; */
+  font-size: 3.5rem;
+}
+
+.commitment h2 {
+  /* font-size: 50px; */
+  font-size: 3.23rem;
+  color: #fca311;
+}
+/* Commitment section css end */
+
+/* ****************************************** */
+/* card group section start */
+/* ****************************************** */
+.card-groups-section {
+  overflow: hidden;
+  background: #14213d;
+  /* transition: 2s ease-in-out; */
+}
+
+.card-groups-section .card-title .top-line,
+.card-groups-section .card-title .bottom-line {
+  width: 35%;
+  height: 5px;
+  background: white;
+}
+
+.card-groups-section .card-title .top-line {
+  margin-left: 15%;
+  opacity: 0;
+  transform: translateX(-80%);
+  transition: 1s ease-in-out;
+}
+
+/* this class add topline section when window will be scroll */
+.top-line-slide {
+  opacity: 1 !important;
+  transform: translateX(0%) !important;
+}
+
+.card-groups-section .card-title .bottom-line {
+  margin-left: 50%;
+  opacity: 0;
+  transform: translateX(80%);
+  transition: 1s ease-in-out;
+}
+
+/* this class add bottomline section when window will be scroll */
+.bottom-line-slide {
+  opacity: 1 !important;
+  transform: translateX(0%) !important;
+}
+
+.card-groups-section .card-title h1 {
+  /* font-size: 50px; */
+  font-size: 3.34rem;
+  color: #fca311;
+  opacity: 0;
+  transition: 2s ease-in-out;
+}
+
+/* this class add card title h1 tag section when window will be scroll */
+.what-we-opacity {
+  opacity: 1 !important;
+}
+
+.card-groups-section .card-groups p {
+  line-height: 35px;
+  letter-spacing: 0.6px;
+  word-spacing: 1px;
+  color: #2f3032;
+}
+
+.card-groups-section .card-groups h3 {
+  color: #fca311;
+  font-size: 1.6rem;
+}
+
+.card-groups-section .card-groups .box {
+  transition: 0.2s ease-in-out;
+}
+
+/* this class add card group card box section when window will be scroll */
+.opacity-none {
+  opacity: 0.2 !important;
+}
+/* card group section end */
+
+/* ****************************************** */
+/* business section start */
+/* ****************************************** */
+.business-section {
+  background: url("../../img/background/background.jpg1.jpg") no-repeat center
+    center/cover;
+  position: relative;
+}
+
+.business-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 33, 61, 0.9);
+}
+
+.business-section #business {
+  transform: translateX(80%);
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+/* this class add business content section when window will be scroll */
+.business-translateX {
+  opacity: 1 !important;
+  transform: translateX(0%) !important;
+}
+
+.business-section h1 {
+  font-size: 3rem;
+}
+
+.business-section h2 {
+  font-size: 3rem;
+  color: #fca311;
+}
+/* business section end   */
+
+/* Main-area css end */
+
+/* Footer-area css start */
+/* company contact area css start */
+.company-contact {
+  background: #14213d;
+}
+
+#tursted {
+  color: #fca311;
+  transform: translateX(-40%);
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+/* this class add tursted section when window will be scroll */
+.trusted-left-to-right-slide {
+  transform: translateX(0%) !important;
+  opacity: 1 !important;
+}
+
+.company-contact .divager {
+  height: 200px;
+  width: 5px;
+  transform: translateY(80%);
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+/* this class add divager section when window will be scroll */
+.divager-bottom-top-slide {
+  transform: translateY(0%) !important;
+  opacity: 1 !important;
+}
+
+.company-contact #img-group {
+  transform: scale(0.1);
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+/* this class add img-group section when window will be scroll */
+.img-group-zoom-in {
+  transform: scale(1) !important;
+  opacity: 1 !important;
+}
+
+.contact-area {
+  background: #14213d;
+}
+
+/* contact area css end   */
+
+/* copy right css start */
+.footer-area .copy-right {
+  background: #141825;
+}
+
+.footer-area .copy-right p {
+  color: #fca311;
+  font-weight: 400;
+}
+/* copy right css end   */
+/* Footer-area css end */

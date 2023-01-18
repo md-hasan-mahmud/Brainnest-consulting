@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="./fontawesome-icon/css/all.min.css" />
+    <link rel="stylesheet" href="./fontawesome-icon/css/fontawesome.min.css" />
+
+    <!-- External css -->
+    <link rel="stylesheet" href="./src/styles/contactus.css" />
+    <!-- Responsive css -->
+    <link
+      rel="stylesheet"
+      href="./src/responsive-css/responsive-contact-us.css"
+    />
+  </head>
+  <body>
+    <!-- Header-area-start -->
+    <header class="header-area pt-lg-5 pt-md-4" id="header">
+      <nav class="top-navbar pt-2 pt-md-2 py-lg-0" id="top-navber">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="logo col-md-4 col-lg-3 col-sm-5" id="img-section">
+              <a href="#" class="text-decoration-none">
+                <img src="./img/header navbar logo/logo.png" alt="logo"
+              /></a>
+            </div>
+            <div class="navlink col-md-8 col-lg-7 col-sm-7">
+              <div class="d-flex justify-content-lg-end" id="navlink">
+                <a
+                  href="./index.html#home"
+                  class="text-decoration-none link ms-4"
+                  >HOME</a
+                >
+                <a
+                  href="./index.html#ourservice"
+                  class="text-decoration-none link ms-4"
+                  >OUR SERVICE</a
+                >
+                <a
+                  href="./index.html#our-partners"
+                  class="text-decoration-none link ms-4"
+                  >OUR PARTNERS</a
+                >
+                <a
+                  href="./contactus.html"
+                  class="text-decoration-none link ms-4"
+                  >CONTACT</a
+                >
+              </div>
+            </div>
+            <!-- icon -->
+            <div class="icon" id="icon-group">
+              <i class="fa-solid fa-bars" id="bars"></i>
+              <i class="fa-solid fa-xmark" id="xmark"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header-area-end -->
+    <!-- Main area start -->
+    <main class="main-area" id="main">
+      <!-- img-section -->
+      <section class="img-section pt-4 py-md-0">
+        <div class="container relatives">
+          <div class="row justify-content-center">
+            <div
+              class="col-md-12 col-lg-10 text-center text-md-start offset-lg-1 img-box"
+            >
+              <img
+                src="./img/contact-us-img/contact-us-mg.png"
+                class="img-fluid"
+                alt="contact-us-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact section -->
+      <section class="contact-section" id="contact-us">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-6 col-lg-5 social-area">
+              <h1 class="mt-5">GET IN TOUCH</h1>
+              <div class="location mt-5">
+                <div class="icon">
+                  <i class="fa-sharp fa-solid fa-location-dot"></i>
+                </div>
+                <p class="mt-4 text-white">Hollerallee 26/2. OG</p>
+                <p class="text-white">28209 Bremen</p>
+                <p class="germany">Germany</p>
+                <div class="social-icon mb-4 mb-lg-0">
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- form area-->
+            <div class="col-md-6 col-lg-5">
+              <form
+                class="row needs-validation form-area p-4"
+                novalidate
+                id="form"
+              >
+                <!-- name -->
+                <div class="col-md-12 col-lg-12">
+                  <div class="d-flex name">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      required="required"
+                      placeholder=" "
+                    />
+                    <label for="name">Name/Company</label>
+                    <i class="fa-solid fa-check" id="name-valid"></i>
+                    <i
+                      class="fa-solid fa-circle-exclamation"
+                      id="name-invalid"
+                    ></i>
+                  </div>
+                  <div class="bottom-line"></div>
+                </div>
+                <!-- email -->
+                <div class="col-md-12 col-lg-12">
+                  <div class="d-flex email">
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      required="required"
+                      placeholder=" "
+                    />
+                    <label for="email">Email</label>
+                    <i class="fa-solid fa-check" id="email-valid"></i>
+                    <i
+                      class="fa-solid fa-circle-exclamation"
+                      id="email-invalid"
+                    ></i>
+                  </div>
+                  <div class="bottom-line"></div>
+                </div>
+                <!-- number option -->
+                <div class="col-md-12 col-lg-12">
+                  <div class="d-flex number">
+                    <input
+                      type="tel"
+                      name="number"
+                      id="number"
+                      required="required"
+                      placeholder=" "
+                    />
+                    <label for="number">Number</label>
+                    <i class="fa-solid fa-check" id="number-valid"></i>
+                    <i
+                      class="fa-solid fa-circle-exclamation"
+                      id="number-invalid"
+                    ></i>
+                  </div>
+                  <div class="bottom-line"></div>
+                </div>
+                <!-- select option -->
+                <div class="col-md-12 col-lg-12">
+                  <select name="select" id="select">
+                    <option value="" disabled selected="">Select...</option>
+                    <option value="Business Management & Consulting Services">
+                      Business Management & Consulting Services
+                    </option>
+                    <option value="Jobs & Internships">
+                      Jobs & Internships
+                    </option>
+                    <option value="Training Programs">Training Programs</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div class="bottom-line"></div>
+                </div>
+                <!-- textarea -->
+                <div class="mb-md-12 col-lg-12">
+                  <div class="d-flex text-area">
+                    <textarea
+                      name="commentbox"
+                      id="commentbox"
+                      cols="30"
+                      rows="4"
+                      required="required"
+                      placeholder=" "
+                    ></textarea>
+                    <label for="commentbox">Type Your Message</label>
+                    <i class="fa-solid fa-check" id="text-area-valid"></i>
+                    <i
+                      class="fa-solid fa-circle-exclamation"
+                      id="text-area-invalid"
+                    ></i>
+                  </div>
+                  <div class="bottom-line"></div>
+                </div>
+                <div class="col-12">
+                  <button class="py-3 w-100" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Google maps -->
+      <section class="map pt-5">
+        <div class="row">
+          <div class="col-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.032416793204!2d90.74623171480582!3d24.299695573487252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3756857a337e07cf%3A0xeaa42fcaf12c0418!2sNabil%20Software%20farm!5e1!3m2!1sen!2sbd!4v1672535741243!5m2!1sen!2sbd"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main area end -->
+    <!-- Footer area start -->
+    <footer class="footer-area bg-black">
+      <section class="copy-right pb-3 pt-4">
+        <div class="container">
+          <div class="text text-center">
+            <p>&copy; 2021 - 2022 Brainnest</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Footer area end  -->
+    <!-- External Javascript -->
+    <script src="./src/scripts/utilities.js"></script>
+    <script src="./src/scripts/contactus.js"></script>
+  </body>
+</html>

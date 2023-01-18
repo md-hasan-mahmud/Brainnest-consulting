@@ -1,0 +1,628 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .header-area .logo img {
+    width: 5.5rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  /* top navber css */
+
+  .top-navbar {
+    background: black;
+  }
+
+  .header-area {
+    padding-bottom: 0rem !important;
+  }
+
+  .header-area .top-navbar .d-flex {
+    position: fixed;
+    flex-direction: column;
+    row-gap: 3rem;
+    text-align: center;
+    background: rgba(20, 33, 61, 0.8);
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    box-sizing: border-box;
+    transition: 1s ease-in-out;
+    z-index: 99;
+  }
+
+  /* this class will be active navlink area when icon bars */
+  .header-area.active .top-navbar .d-flex {
+    transform: translateX(0%) !important;
+    opacity: 1;
+  }
+
+  .header-area .icon {
+    display: block;
+  }
+
+  .header-area.active #bars {
+    display: none;
+  }
+
+  .header-area.active #xmark {
+    display: block;
+    z-index: 999;
+    opacity: 1;
+  }
+
+  /* main area img css */
+
+  .img-section::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #14213d;
+  }
+
+  .main-area .img-section img {
+    width: 29.5rem;
+  }
+
+  /* form area css */
+
+  .main-area .contact-section .form-area label {
+    font-size: 1.2rem;
+  }
+
+  .main-area .contact-section .form-area .name label {
+    left: 15%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 8%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 9%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 17%;
+    top: 23%;
+  }
+
+  .main-area .contact-section .form-area input:focus ~ label {
+    top: 20%;
+    left: 14%;
+    color: #fca311;
+    font-size: 1.2rem;
+  }
+
+  .main-area .contact-section .form-area textarea:focus ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 20%;
+    font-size: 1.2rem;
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    top: 20%;
+    left: 14%;
+    color: #fca311;
+    font-size: 1.2rem;
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 20%;
+    font-size: 1.2rem;
+  }
+
+  /* map area css */
+  .map iframe {
+    height: 300px;
+  }
+}
+
+/* Extra small devices (phones, 467px and down) */
+@media only screen and (max-width: 467px) {
+  /* form area css */
+  .main-area .contact-section .form-area .name label {
+    left: 18%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 10%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 12%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 21%;
+    top: 23%;
+  }
+
+  .main-area .contact-section .form-area textarea:focus ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 23%;
+    /* font-size: 1.2rem; */
+  }
+
+  .main-area .contact-section .form-area input:focus ~ label {
+    color: #fca311;
+    top: 16%;
+    left: 20%;
+    /* font-size: 1.2rem; */
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    color: #fca311;
+    top: 16%;
+    left: 20%;
+    /* font-size: 1.2rem; */
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 23%;
+    /* font-size: 1.2rem; */
+  }
+}
+
+/* Extra small devices (phones, 394px and down) */
+@media only screen and (max-width: 394px) {
+  /* form area css */
+
+  .main-area .contact-section .form-area .name label {
+    left: 22%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 11%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 14%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 26%;
+    top: 23%;
+  }
+
+  .main-area .contact-section .form-area textarea:focus ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 23%;
+    /* font-size: 1.2rem; */
+  }
+
+  .main-area .contact-section .form-area input:focus ~ label {
+    color: #fca311;
+    top: 16%;
+    left: 20%;
+    /* font-size: 1.2rem; */
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    color: #fca311;
+    top: 16%;
+    left: 20%;
+    /* font-size: 1.2rem; */
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 23%;
+    /* font-size: 1.2rem; */
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* Header area css */
+  .header-area {
+    background: black;
+  }
+
+  /* Header css */
+  .header-area .logo img {
+    width: 5.5rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  .sticky .logo img {
+    width: 4.5rem;
+  }
+
+  .sticky .icon {
+    font-size: 2rem;
+  }
+
+  .header-area .top-navbar .d-flex {
+    position: fixed;
+    flex-direction: column;
+    row-gap: 3rem;
+    text-align: center;
+    background: rgba(20, 33, 62, 0.4);
+    padding: 20px;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    width: 330px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    right: 0px;
+    top: 0px;
+    transform: translateX(100%);
+    opacity: 0;
+    box-sizing: border-box;
+    transition: 1s ease-in-out;
+    z-index: 99;
+  }
+
+  /* this class will be active navlink area when icon bars */
+  .header-area.active .top-navbar .d-flex {
+    transform: translateX(0%) !important;
+    opacity: 1 !important;
+  }
+
+  .header-area.active #bars {
+    display: none;
+  }
+
+  .header-area.active #xmark {
+    display: block;
+    z-index: 999;
+    opacity: 1;
+  }
+
+  /* this class will be active navlink area when icon bars */
+  .header-area .icon {
+    display: block;
+  }
+
+  /* main area img css */
+  .main-area .img-section img {
+    width: 29.5rem;
+  }
+
+  .img-section::before {
+    height: 100%;
+  }
+
+  /* contact social css */
+  .main-area .social-area .germany {
+    margin-bottom: 4rem;
+  }
+
+  /* map css */
+  .map iframe {
+    height: 250px;
+  }
+
+  /* form area css */
+  .main-area .contact-section .form-area input:focus ~ label {
+    top: 20%;
+    left: 14%;
+    color: #fca311;
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    top: 20%;
+    left: 14%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  /* header area css */
+  .header-area {
+    overflow: hidden;
+    background: #14213d;
+    /* padding-bottom: 9rem !important; */
+  }
+
+  .sticky .logo img {
+    width: 5.5rem !important;
+  }
+
+  .header-area .top-navbar .d-flex {
+    position: static;
+    flex-direction: row;
+    row-gap: 3px;
+    text-align: start;
+    background: rgba(0, 0, 0, 0);
+    padding: 0px;
+    width: 100%;
+    height: 0%;
+    font-size: 1.1rem;
+    top: 0;
+    right: 0;
+    transform: translateX(0%) !important;
+    opacity: 1 !important;
+  }
+
+  .header-area .icon {
+    display: none;
+  }
+
+  .header-area .d-flex a {
+    transition: 0.3s ease-in-out;
+    color: white;
+    font-weight: 500;
+  }
+
+  .header-area .logo img {
+    width: 7rem;
+    transition: 0.5s ease-in-out;
+  }
+  /* img section css */
+
+  .img-section::before {
+    height: 11rem;
+    top: 0;
+    left: 0;
+  }
+
+  .main-area .img-section img {
+    width: 30rem;
+    position: relative;
+    top: -3%;
+    left: -2%;
+    z-index: 9;
+  }
+
+  /* form area css */
+
+  .main-area .contact-section .form-area .name label {
+    left: 25%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 13%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 16%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 27%;
+    top: 23%;
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    top: 20%;
+    left: 20%;
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    left: 22%;
+    top: 8%;
+  }
+
+  .main-area .contact-section .form-area input:focus ~ label {
+    top: 20%;
+    left: 20%;
+  }
+
+  .main-area .contact-section .form-area textarea:focus ~ label {
+    left: 22%;
+    top: 8%;
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    left: 22%;
+    top: 8%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+
+  /* header area css */
+  .header-area .logo img {
+    width: 7rem;
+  }
+
+  /* main section img area css */
+  .main-area .img-section img {
+    top: -4%;
+    left: -10%;
+    z-index: 9;
+  }
+
+  /* form area css */
+
+  .main-area .contact-section .form-area .name label {
+    left: 24%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 12%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 15%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 28%;
+    top: 23%;
+  }
+
+  .main-area .contact-section .form-area input:focus ~ label {
+    top: 20%;
+    left: 20%;
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    top: 20%;
+    left: 20%;
+  }
+
+  .main-area .contact-section .form-area textarea:focus ~ label {
+    left: 25%;
+    top: 8%;
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 25%;
+  }
+
+  /* map section css */
+  .map iframe {
+    height: 400px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* header area logo img */
+  .header-area .logo img {
+    width: 8rem;
+  }
+
+  /* main area img section css */
+  .main-area .img-section img {
+    top: -6%;
+    left: -6%;
+    z-index: 9;
+    width: 34rem;
+  }
+
+  /* form area css */
+  .main-area .contact-section .form-area .name label {
+    left: 20%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 11%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 13%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 23%;
+    top: 23%;
+  }
+
+  .main-area .contact-section .form-area textarea:focus ~ label {
+    left: 20%;
+    top: 8%;
+  }
+
+  .main-area .contact-section .form-area input:focus ~ label {
+    top: 20%;
+    left: 16%;
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    left: 20%;
+    top: 8%;
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    top: 20%;
+    left: 16%;
+  }
+
+  /* map section css */
+  .map iframe {
+    height: 480px;
+  }
+}
+
+/* Extra Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+  /* header area logo img */
+  .header-area .logo img {
+    width: 9rem;
+  }
+
+  /* main area img section css */
+  .main-area .img-section img {
+    top: -6%;
+    left: -4%;
+    z-index: 9;
+    width: 37rem;
+  }
+
+  /* form area css */
+  .main-area .contact-section .form-area .name label {
+    left: 17%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 9%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 11%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 19%;
+    top: 23%;
+  }
+}
