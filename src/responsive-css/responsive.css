@@ -511,10 +511,6 @@
     font-size: 14px;
   }
 
-  /* .header-area .top-navbar .d-flex:first-child {
-    padding-top: 20%;
-  } */
-
   /* Header css */
   .header-area .top-navbar .d-flex {
     position: static;
@@ -525,7 +521,7 @@
     padding: 0px;
     width: 100%;
     height: 0%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     top: 0;
     right: 0;
     transform: translateX(0%) !important;

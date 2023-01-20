@@ -1,0 +1,2296 @@
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.container {
+  /* width: 1100px; */
+  min-width: 350px;
+}
+
+/* ********************************************* */
+/* Header area css start */
+/* ********************************************* */
+.header-area {
+  overflow: hidden;
+  background: #14213d;
+}
+
+.header-area .logo img {
+  width: 7.5rem;
+}
+
+#top-navber {
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+/* .header-area #img-section {
+  transform: translateX(-80%);
+  opacity: 1;
+  transition: 1s ease-in-out;
+} */
+
+/* this class add img-section  when window will be onload */
+/* .img-section-left-to-right-slide {
+  opacity: 1 !important;
+  transform: translateX(0%) !important;
+} */
+
+/* add this class navber when window will scroll start */
+.sticky #top-navber {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0) !important;
+  box-shadow: 0px 0px 15px 0px rgb(252, 163, 17, 0.5);
+  z-index: 99;
+}
+
+.header-area .d-flex a {
+  transition: 0.3s ease-in-out;
+  color: white;
+  font-weight: 400;
+}
+
+.header-area .d-flex a.active {
+  color: #fca311;
+}
+
+.header-area .d-flex a:hover {
+  color: #fca311;
+}
+
+/* icon css */
+.header-area .icon {
+  color: #fca311;
+  font-size: 2.5rem;
+  position: absolute;
+  width: 50px;
+  right: 20px;
+  top: 18px;
+  /* transform: translateX(80%);
+  opacity: 0;
+  transition: 1s ease-in-out; */
+  display: none;
+}
+
+/* this class add icon tag  when window will be onload */
+/* .icon-right-to-left-slide {
+  transform: translateX(0%) !important;
+  opacity: 1 !important;
+  z-index: 999;
+} */
+
+.header-area .icon i {
+  position: inherit;
+}
+
+.header-area .icon #xmark {
+  opacity: 0;
+  z-index: -99;
+}
+
+.header-area .icon:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* top-second-section css  start*/
+
+/* .header-area #top-second-header {
+  transform: translateY(50%);
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+} */
+
+/* this class add top-second-header tag when window will be onload */
+/* .top-second-header-bottom-to-top-slide {
+  transform: translateY(0%) !important;
+  opacity: 1 !important;
+} */
+
+.top-second-section h1 {
+  color: #fca311;
+  font-weight: 700;
+  /* font-size: 45px; */
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+}
+
+.top-second-section h2 {
+  /* font-size: 45px; */
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+}
+
+.top-second-section p {
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.top-second-section p span {
+  font-weight: 700;
+  color: #fca311;
+  letter-spacing: 0.1;
+}
+/* top-second-section css end*/
+/* Header area css end */
+
+/* ********************************************* */
+/* Main-area css start */
+/* ********************************************* */
+.main {
+  overflow: hidden;
+}
+
+/* ********************************************* */
+/* number section css start */
+/* ********************************************* */
+.number-section {
+  background: url(6110e160016b0f2790a7.jpg) no-repeat center
+    center/ 100% 100%;
+  position: relative;
+}
+
+.number-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(24, 32, 50, 0.93);
+}
+
+/* .number-section .number-group {
+  transform: scale(0.2);
+  opacity: 0;
+  transition: 1s ease-in-out;
+} */
+
+/* animation class add when window will be scroll */
+/* .numshow {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+} */
+
+.number-section h1 {
+  /* font-size: 90px; */
+  font-size: 5.5rem;
+  font-size: 700;
+  color: #fca311;
+}
+
+.number-section h1,
+p {
+  position: relative;
+  z-index: 1;
+}
+/* number section css end */
+
+/* ********************************************* */
+/* about us section css start*/
+/* ********************************************* */
+.abut-us-section {
+  background: #14213d;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 5px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.who-we-are {
+  grid-column: 2 /13;
+  /* opacity: 0;
+  transition: 2s ease-in-out; */
+}
+/* this class add who we are section when window will be scroll */
+/* .translateX {
+  opacity: 1 !important;
+} */
+
+.who-we-are h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.top-horizantal-line {
+  margin-top: 10px;
+  height: 5px;
+  background: #fca311;
+  grid-row: 2;
+  grid-area: 2/4;
+  grid-column: 4/13;
+  /* transform: translateX(-80%);
+  opacity: 0;
+  transition: 1s ease-in-out; */
+}
+/* this class add top horizantal section when window will be scroll */
+/* .top-horizantal-line-translateX {
+  transform: translateX(0%);
+  opacity: 1;
+} */
+
+.about-us {
+  background: #fca311;
+  display: grid;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  grid-row: 2;
+  grid-column: 4 / 7;
+  height: 250px;
+}
+
+/* .about-us-content {
+  transform: translateX(-80%);
+  opacity: 0;
+  transition: 1s ease-in-out;
+} */
+
+/* this class add about us section when window will be scroll */
+/* .content-translateX {
+  transform: translateX(0%);
+  opacity: 1;
+} */
+
+.bottom-horizantal-line {
+  height: 5px;
+  background: #fca311;
+  grid-row: 4;
+  grid-area: 3/1;
+  grid-column: 1/7;
+  /* transform: translateX(-80%);
+  opacity: 0;
+  transition: 1s ease-in-out; */
+}
+
+/* this class add bottom horizantal section when window will be scroll */
+/* .bottom-horizantal-translateX {
+  transform: translateX(0%);
+  opacity: 1;
+} */
+
+.about-us h2 {
+  text-transform: uppercase;
+}
+
+.about-us .line {
+  width: 80%;
+  background: black;
+  margin: 0 auto;
+  height: 4px;
+}
+
+.brainnest-paregraph {
+  margin-top: 40px;
+  grid-row: 2;
+  grid-area: 2/7;
+  grid-column: 7/ 13;
+  /* transform: translateY(-60%);
+  transition: 1s ease-in-out;
+  opacity: 0; */
+}
+
+/* this class add brainnest-paregraph section when window will be scroll */
+/* .brainnest-paregraph-translateY {
+  transform: translateY(0%);
+  opacity: 1;
+} */
+
+.brainnest-paregraph p {
+  text-align: justify;
+  line-height: 30px;
+  letter-spacing: 0.5s;
+  font-weight: 400;
+}
+
+.brainnest-paregraph p span {
+  color: #fca311;
+  font-weight: 500;
+}
+
+.form-tackline {
+  margin-top: 20px;
+  grid-row: 3;
+  grid-area: 3/1;
+  grid-column: 1/4;
+  /* transform: translateY(60%);
+  transition: 1s ease-in-out;
+  opacity: 0; */
+}
+
+/* this class add form-tackline section when window will be scroll */
+/* .form-tackline-translateY {
+  transform: translateY(0%);
+  opacity: 1;
+} */
+
+.form-tackline p {
+  text-align: justify;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.5s;
+}
+
+.our-mission {
+  margin-top: 20px;
+  grid-row: 3;
+  grid-area: 3/5;
+  grid-column: 5/13;
+  /* transform: translateX(50%);
+  opacity: 0;
+  transition: 1s ease-in-out; */
+}
+
+/* this class add Our mission section when window will be scroll */
+/* .our-mission-translateX {
+  transform: translateX(0%);
+  opacity: 1;
+} */
+
+.brainnest-paregraph,
+.form-tackline {
+  position: relative;
+}
+
+.brainnest-paregraph::before,
+.form-tackline::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  background: #fca311;
+  height: 300px;
+}
+
+.brainnest-paregraph::before {
+  top: -140px;
+  left: -40px;
+}
+
+.form-tackline::before {
+  right: -40px;
+  top: -100px;
+}
+
+/* about us section css end*/
+
+/* ****************************************** */
+/* Commitment section css start */
+/* ****************************************** */
+
+/* .commitment #translate-y {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+} */
+
+/* this class add in our commitment section  when window scroll  */
+/* .translateY {
+  opacity: 1 !important;
+  transform: translateY(0%) !important;
+} */
+
+.commitment {
+  overflow: hidden;
+  background: url(6110e160016b0f2790a7.jpg) no-repeat center
+    center/cover;
+  position: relative;
+}
+
+.commitment::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #141825d8;
+}
+
+.commitment h1 {
+  /* font-size: 55px; */
+  font-size: 3.5rem;
+}
+
+.commitment h2 {
+  /* font-size: 50px; */
+  font-size: 3.23rem;
+  color: #fca311;
+}
+
+.commitment h1,
+h2 {
+  position: relative;
+  z-index: 1;
+}
+/* Commitment section css end */
+
+/* ****************************************** */
+/* card group section start */
+/* ****************************************** */
+.card-groups-section {
+  overflow: hidden;
+  background: #14213d;
+  /* transition: 2s ease-in-out; */
+}
+
+.card-groups-section .card-title .top-line,
+.card-groups-section .card-title .bottom-line {
+  width: 35%;
+  height: 5px;
+  background: white;
+}
+
+.card-groups-section .card-title .top-line {
+  margin-left: 15%;
+  /* opacity: 0;
+  transform: translateX(-80%);
+  transition: 1s ease-in-out; */
+}
+
+/* this class add topline section when window will be scroll */
+/* .top-line-slide {
+  opacity: 1 !important;
+  transform: translateX(0%) !important;
+} */
+
+.card-groups-section .card-title .bottom-line {
+  margin-left: 50%;
+  /* opacity: 0;
+  transform: translateX(80%);
+  transition: 1s ease-in-out; */
+}
+
+/* this class add bottomline section when window will be scroll */
+/* .bottom-line-slide {
+  opacity: 1 !important;
+  transform: translateX(0%) !important;
+} */
+
+.card-groups-section .card-title h1 {
+  /* font-size: 50px; */
+  font-size: 3.34rem;
+  color: #fca311;
+  /* opacity: 0;
+  transition: 2s ease-in-out; */
+}
+
+/* this class add card title h1 tag section when window will be scroll */
+/* .what-we-opacity {
+  opacity: 1 !important;
+} */
+
+.card-groups-section .card-groups p {
+  line-height: 35px;
+  letter-spacing: 0.6px;
+  word-spacing: 1px;
+  color: #2f3032;
+}
+
+.card-groups-section .card-groups h3 {
+  color: #fca311;
+  font-size: 1.6rem;
+}
+
+.card-groups-section .card-groups .box {
+  transition: 0.2s ease-in-out;
+}
+
+/* this class add card group card box section when window will be scroll */
+/* .opacity-none {
+  opacity: 0.2 !important;
+} */
+/* card group section end */
+
+/* ****************************************** */
+/* business section start */
+/* ****************************************** */
+.business-section {
+  background: url(6110e160016b0f2790a7.jpg) no-repeat center
+    center/cover;
+  position: relative;
+}
+
+.business-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 33, 61, 0.9);
+}
+
+/* .business-section #business {
+  transform: translateX(80%);
+  opacity: 0;
+  transition: 1s ease-in-out;
+} */
+
+/* this class add business content section when window will be scroll */
+/* .business-translateX {
+  opacity: 1 !important;
+  transform: translateX(0%) !important;
+} */
+
+.business-section h1 {
+  font-size: 3rem;
+}
+
+.business-section h2 {
+  font-size: 3rem;
+  color: #fca311;
+}
+
+.business-section h1,
+h2 {
+  position: relative;
+  z-index: 1;
+}
+/* business section end   */
+
+/* Main-area css end */
+
+/* Footer-area css start */
+/* company contact area css start */
+.company-contact {
+  background: #14213d;
+}
+
+#tursted {
+  color: #fca311;
+  /* transform: translateX(-40%);
+  opacity: 0;
+  transition: 1s ease-in-out; */
+}
+/* this class add tursted section when window will be scroll */
+/* .trusted-left-to-right-slide {
+  transform: translateX(0%) !important;
+  opacity: 1 !important;
+} */
+
+.company-contact .divager {
+  height: 200px;
+  width: 5px;
+  /* transform: translateY(80%);
+  opacity: 0;
+  transition: 1s ease-in-out; */
+}
+/* this class add divager section when window will be scroll */
+/* .divager-bottom-top-slide {
+  transform: translateY(0%) !important;
+  opacity: 1 !important;
+} */
+
+/* .company-contact #img-group {
+  transform: scale(0.1);
+  transition: 1s ease-in-out;
+  opacity: 0;
+} */
+/* this class add img-group section when window will be scroll */
+/* .img-group-zoom-in {
+  transform: scale(1) !important;
+  opacity: 1 !important;
+} */
+
+.contact-area {
+  background: #14213d;
+}
+
+/* contact area css end   */
+
+/* copy right css start */
+.footer-area .copy-right {
+  background: #141825;
+}
+
+.footer-area .copy-right p {
+  color: #fca311;
+  font-weight: 400;
+}
+/* copy right css end   */
+/* Footer-area css end */
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* container css */
+.container {
+  /* width: 1100px; */
+  min-width: 350px;
+}
+
+/* header-area css start*/
+.header-area {
+  overflow: hidden;
+  /* background: #14213d; */
+  /* padding-bottom: 9rem !important; */
+}
+
+.sticky #top-navber {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0) !important;
+  box-shadow: 0px 0px 15px 0px rgb(252, 163, 17, 0.5);
+  z-index: 99;
+}
+
+.header-area .logo img {
+  width: 7.5rem;
+}
+
+#top-navber {
+  position: relative;
+  transition: 1s ease-in-out;
+}
+
+.header-area .d-flex a {
+  transition: 0.3s ease-in-out;
+  color: white;
+  font-weight: 400;
+}
+
+.header-area .d-flex a:nth-child(1) {
+  color: #fca311;
+}
+
+.active {
+  color: #fca311;
+}
+
+.header-area .d-flex a:hover {
+  color: #fca311;
+}
+
+/* icon css */
+.header-area .icon {
+  color: #fca311;
+  font-size: 2.5rem;
+  position: absolute;
+  width: 50px;
+  right: 20px;
+  top: 18px;
+  transition: 0.3s;
+  display: none;
+}
+
+.header-area .icon i {
+  position: inherit;
+}
+
+.header-area .icon #xmark {
+  opacity: 0;
+  z-index: -99;
+}
+
+.header-area .icon:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* header-area css end */
+
+/* Main-area css start */
+/* img-section css start */
+.main-area {
+  background: #26364a;
+}
+
+.img-section {
+  position: relative;
+}
+
+.img-section::before {
+  content: "";
+  display: block;
+  height: 10rem;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #14213d;
+}
+
+.main-area .img-section img {
+  width: 30rem;
+  position: relative;
+  z-index: 9;
+  top: -2%;
+  left: 1%;
+}
+
+/* img-section css end */
+
+/* contact-section css */
+/* social area css */
+.main-area .social-area h1 {
+  color: #fca311;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.main-area .social-area .fa-sharp {
+  color: #fca311;
+  font-size: 2.5rem;
+}
+
+.main-area .social-area p {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.main-area .social-area .germany {
+  color: #fca311;
+  font-size: 1.2rem;
+  margin-top: 3px;
+  margin-bottom: 6rem;
+}
+
+.main-area .social-icon a {
+  text-decoration: none;
+}
+
+.main-area .social-icon a:hover i {
+  color: #fca311;
+}
+
+.main-area .social-icon i {
+  font-size: 1.4rem;
+  color: white;
+  margin-right: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+/* form area css */
+.main-area .contact-section .form-area {
+  background: #16233e;
+  border-radius: 10px;
+  box-shadow: -12px 20px 20px 5px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+
+.main-area .contact-section .form-area label,
+.main-area .contact-section .form-area i {
+  position: absolute;
+}
+
+.main-area .contact-section .form-area input,
+.main-area .contact-section .form-area select,
+.main-area .contact-section .form-area textarea {
+  width: 100%;
+  padding: 10px 20px;
+  padding-top: 2rem;
+  padding-right: 3rem;
+  box-sizing: border-box;
+  background: #14213d;
+  outline: none;
+  font-size: 1.2rem;
+  border: 1px solid #734700;
+  color: white;
+}
+
+.main-area .contact-section .form-area button[type="submit"] {
+  background: #fca311;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-area .contact-section .form-area label {
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  color: #916031;
+  padding: 8px 10px;
+  transition: 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.main-area .contact-section .form-area .name label {
+  left: 17%;
+}
+
+.main-area .contact-section .form-area .email label {
+  left: 9%;
+}
+
+.main-area .contact-section .form-area .number label {
+  left: 11%;
+}
+
+.main-area .contact-section .form-area .text-area label {
+  left: 19%;
+  top: 23%;
+}
+
+.main-area .contact-section .form-area textarea {
+  padding-top: 30px;
+  user-select: none;
+}
+
+.main-area .contact-section .form-area .text-area i {
+  top: 20%;
+  right: 5%;
+}
+
+.main-area .contact-section .form-area i {
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 1.5rem;
+}
+
+.main-area .contact-section .form-area .number i {
+  right: 10px;
+}
+
+.main-area .contact-section .d-flex {
+  position: relative;
+}
+
+.main-area .contact-section .form-area .bottom-line {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 2px;
+  height: 3px;
+  /* border-radius: 5; */
+  background: #fca311;
+}
+
+.main-area .contact-section .form-area select {
+  color: #fca311;
+  cursor: pointer;
+}
+
+.main-area .contact-section .form-area select option {
+  color: #fca311;
+  background: black;
+}
+
+.main-area .contact-section .form-area input:focus {
+  border: 1px solid #fca311;
+}
+.main-area .contact-section .form-area textarea:focus {
+  border: 1px solid #fca311;
+}
+
+.main-area .contact-section .form-area input:focus ~ label {
+  top: 20%;
+  left: 12%;
+  color: #fca311;
+}
+
+.main-area .contact-section .form-area textarea:focus ~ label {
+  color: #fca311;
+  top: 8%;
+  left: 20%;
+}
+
+.main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+  top: 20%;
+  left: 20%;
+  color: #fca311;
+}
+
+.main-area
+  .contact-section
+  .form-area
+  textarea:not(:placeholder-shown)
+  ~ label {
+  color: #fca311;
+  top: 8%;
+  left: 20%;
+}
+
+/* email valid class */
+.valid {
+  border: 1px solid green !important;
+}
+.valid-icon {
+  opacity: 1 !important;
+  color: green;
+  z-index: 9;
+}
+
+.invalid {
+  border: 1px solid rgb(254, 47, 47) !important;
+}
+.invalid-icon {
+  opacity: 1 !important;
+  color: rgb(254, 47, 47);
+  z-index: 9;
+}
+/* form section end */
+
+/* Main-area css end */
+
+/*===============Footer are css start================ */
+.footer-area p {
+  color: #fca311;
+}
+/*==============Footer are css end=================== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .top-navbar {
+    background: black;
+  }
+
+  .top-second-section h1 {
+    /* font-size: 45px; */
+    font-size: 2.5rem;
+  }
+
+  .top-second-section h2 {
+    /* font-size: 45px; */
+    font-size: 2.5rem;
+  }
+
+  /* number group css */
+  .number-section h1 {
+    /* font-size: 90px; */
+    font-size: 3.5rem;
+  }
+
+  /* commitment css */
+  .commitment h1 {
+    /* font-size: 55px; */
+    font-size: 2.5rem;
+  }
+  .commitment h2 {
+    /* font-size: 50px; */
+    font-size: 2.5rem;
+  }
+
+  /* card group area css */
+  .card-groups-section .card-title .top-line,
+  .card-groups-section .card-title .bottom-line {
+    width: 70%;
+    height: 3px;
+  }
+
+  .card-groups-section .card-title h1 {
+    /* font-size: 50px; */
+    font-size: 2.5rem;
+  }
+
+  .card-groups-section .card-title .top-line {
+    margin-left: -20%;
+  }
+
+  .header-area .logo img {
+    width: 5.5rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  .sticky .logo img {
+    width: 5rem;
+  }
+
+  .header-area .top-navbar .d-flex {
+    position: fixed;
+    flex-direction: column;
+    row-gap: 3rem;
+    text-align: center;
+    background: rgba(20, 33, 61, 0.8);
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    box-sizing: border-box;
+    transition: 1s ease-in-out;
+    z-index: 99;
+  }
+
+  /* this class will be active navlink area when icon bars */
+  .header-area.active .top-navbar .d-flex {
+    transform: translateX(0%) !important;
+    opacity: 1;
+  }
+
+  .header-area .icon {
+    display: block;
+  }
+
+  .header-area.active #bars {
+    display: none;
+  }
+
+  .header-area.active #xmark {
+    display: block;
+    z-index: 999;
+    opacity: 1;
+  }
+
+  /* About us section css */
+
+  .who-we-are {
+    grid-column: 1 /13;
+    position: absolute;
+    top: 36%;
+    transform: rotate(270deg);
+    left: -11%;
+  }
+
+  .who-we-are h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-us {
+    background: #fca311;
+    display: grid;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2;
+    grid-area: 1/1;
+    grid-column: 1 / 5;
+    height: 170px;
+  }
+
+  .brainnest-paregraph {
+    margin-top: -10px;
+    grid-row: 2;
+    grid-area: 2/5;
+    grid-column: 4/ 13;
+    margin-bottom: 105px;
+  }
+
+  .our-mission {
+    margin-top: 20px;
+    grid-row: 3;
+    grid-area: 3/1;
+    grid-column: 1/13;
+  }
+
+  .our-mission h1 {
+    font-size: 2.5rem;
+  }
+
+  .bottom-horizantal-line {
+    height: 5px;
+    background: #fca311;
+    grid-row: 4;
+    grid-area: 3/1;
+    grid-column: 1/10;
+  }
+
+  .form-tackline {
+    margin-top: 15px;
+    grid-row: 3;
+    grid-area: 4/1;
+    grid-column: 1/10;
+  }
+
+  .top-horizantal-line {
+    display: none;
+  }
+
+  .form-tackline::before {
+    display: none;
+  }
+
+  .brainnest-paregraph::before {
+    top: -45px;
+    left: -40px;
+  }
+
+  .about-us h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  /* business section css */
+  .business-section h1 {
+    /* font-size: 45px; */
+    font-size: 2.3rem;
+  }
+
+  .business-section h2 {
+    /* font-size: 45px; */
+    font-size: 2.3rem;
+  }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+  .who-we-are {
+    top: 40%;
+    left: -9%;
+  }
+
+  .form-tackline {
+    grid-column: 1/13;
+  }
+}
+
+/* Extra small devices (phones, 542px and down) */
+@media only screen and (max-width: 542px) {
+  .who-we-are {
+    top: 38%;
+    left: -9%;
+  }
+
+  .form-tackline {
+    grid-column: 1/13;
+  }
+}
+
+/* Extra small devices (phones, 450px and down) */
+@media only screen and (max-width: 450px) {
+  .about-us {
+    height: 145px;
+  }
+
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .brainnest-paregraph::before {
+    top: -35px;
+  }
+
+  .who-we-are {
+    top: 36%;
+    left: -13%;
+  }
+  .brainnest-paregraph {
+    margin-bottom: 80px;
+  }
+
+  .form-tackline {
+    grid-column: 1/13;
+  }
+}
+
+/* Extra small devices (phones, 430px and down) */
+@media only screen and (max-width: 430px) {
+  .about-us {
+    height: 145px;
+  }
+
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .brainnest-paregraph::before {
+    top: -35px;
+  }
+
+  .who-we-are {
+    top: 36%;
+    left: -15%;
+  }
+}
+
+/* Extra small devices (phones, 420px and down) */
+@media only screen and (max-width: 420px) {
+  .about-us {
+    height: 145px;
+  }
+
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .brainnest-paregraph::before {
+    top: -35px;
+  }
+
+  .who-we-are {
+    top: 35%;
+    left: -15%;
+  }
+
+  .brainnest-paregraph {
+    margin-bottom: 80px;
+  }
+}
+/* Extra small devices (phones, 390px and down) */
+@media only screen and (max-width: 390px) {
+  .about-us {
+    height: 130px;
+  }
+
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .brainnest-paregraph::before {
+    top: -35px;
+  }
+
+  .who-we-are {
+    top: 33%;
+    left: -19%;
+  }
+
+  .brainnest-paregraph {
+    margin-bottom: 60px;
+  }
+}
+
+/* Extra small devices (phones, 360px and down) */
+@media only screen and (max-width: 360px) {
+  .about-us {
+    height: 130px;
+  }
+
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .brainnest-paregraph::before {
+    top: -35px;
+  }
+
+  .who-we-are {
+    top: 32%;
+    left: -20%;
+  }
+
+  .brainnest-paregraph {
+    margin-bottom: 30px;
+  }
+
+  .business-section h1 {
+    /* font-size: 45px; */
+    font-size: 2.2rem;
+  }
+
+  .commitment h1 {
+    /* font-size: 55px; */
+    font-size: 2.4rem;
+  }
+
+  .form-tackline {
+    grid-column: 1/13;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+
+  /* Header css */
+  .header-area .logo img {
+    width: 5.5rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  /* add this class navber when window will scroll */
+
+  .top-navbar {
+    background: black;
+  }
+
+  .header-area .top-navbar .d-flex {
+    position: fixed;
+    flex-direction: column;
+    row-gap: 3rem;
+    text-align: center;
+    background: rgba(20, 33, 62, 0.4);
+    padding: 20px;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    width: 330px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    right: 0px;
+    top: 0px;
+    transform: translateX(100%);
+    opacity: 0;
+    box-sizing: border-box;
+    transition: 1s ease-in-out;
+    z-index: 99;
+  }
+
+  /* this class will be active navlink area when icon bars */
+  .header-area.active .top-navbar .d-flex {
+    transform: translateX(0%) !important;
+    opacity: 1 !important;
+  }
+
+  .header-area.active #bars {
+    display: none;
+  }
+
+  .header-area.active #xmark {
+    display: block;
+    z-index: 999;
+    opacity: 1;
+  }
+
+  /* this class will be active navlink area when icon bars */
+  .header-area .icon {
+    display: block;
+  }
+
+  /* About us section css */
+
+  .who-we-are {
+    grid-column: 1 /13;
+    position: absolute;
+    top: 38%;
+    left: -11%;
+    transform: rotate(270deg);
+  }
+
+  .who-we-are h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-us {
+    background: #fca311;
+    display: grid;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2;
+    grid-area: 1/1;
+    grid-column: 1 / 5;
+    height: 170px;
+  }
+
+  .about-us h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+  }
+
+  .brainnest-paregraph {
+    margin-top: -10px;
+    grid-row: 2;
+    grid-area: 2/5;
+    grid-column: 4/ 13;
+    margin-bottom: 105px;
+  }
+
+  .our-mission {
+    margin-top: 20px;
+    grid-row: 3;
+    grid-area: 3/1;
+    grid-column: 1/13;
+  }
+
+  .our-mission h1 {
+    font-size: 2.5rem;
+  }
+
+  .bottom-horizantal-line {
+    height: 5px;
+    background: #fca311;
+    grid-row: 4;
+    grid-area: 3/1;
+    grid-column: 1/10;
+  }
+
+  .form-tackline {
+    margin-top: 15px;
+    grid-row: 3;
+    grid-area: 4/1;
+    grid-column: 1/10;
+  }
+
+  .top-horizantal-line {
+    display: none;
+  }
+
+  .form-tackline::before {
+    display: none;
+  }
+
+  .brainnest-paregraph::before {
+    top: -45px;
+    left: -40px;
+  }
+
+  .card-groups-section .card-title .top-line {
+    margin-left: -8%;
+  }
+
+  .card-groups-section .card-title .top-line,
+  .card-groups-section .card-title .bottom-line {
+    width: 58%;
+    height: 5px;
+    background: white;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  /* Header css */
+  .header-area .top-navbar .d-flex {
+    position: static;
+    flex-direction: row;
+    row-gap: 3px;
+    text-align: start;
+    background: rgba(0, 0, 0, 0);
+    padding: 0px;
+    width: 100%;
+    height: 0%;
+    font-size: 1.1rem;
+    top: 0;
+    right: 0;
+    transform: translateX(0%) !important;
+    opacity: 1 !important;
+  }
+
+  .header-area .top-navbar .d-flex:first-child {
+    padding-top: 0%;
+  }
+
+  .header-area .icon {
+    display: none;
+  }
+
+  .card-groups-section .card-title .top-line {
+    margin-left: -1%;
+  }
+
+  .card-groups-section .card-title .top-line,
+  .card-groups-section .card-title .bottom-line {
+    width: 52%;
+    height: 5px;
+    background: white;
+  }
+
+  /* About us section css */
+  .who-we-are {
+    grid-column: 1 /13;
+    position: static;
+    top: 0%;
+    transform: rotate(0deg);
+    left: 0%;
+    grid-area: 1/1;
+    grid-column: 2/13;
+  }
+
+  .who-we-are h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+  }
+
+  .top-horizantal-line {
+    display: block;
+    grid-row: 2;
+    grid-area: 2/1;
+    grid-column: 5/13;
+  }
+
+  .form-tackline::before {
+    display: block;
+    top: -20%;
+  }
+
+  .about-us {
+    background: #fca311;
+    display: grid;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-row: 3;
+    grid-area: 3/4;
+    grid-column: 5/8;
+    height: 200px;
+  }
+
+  .our-mission h1 {
+    font-size: 3rem;
+  }
+
+  .about-us h2 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+  }
+
+  .brainnest-paregraph {
+    margin-top: 24px;
+    grid-row: 2;
+    grid-area: 3/8;
+    grid-column: 8/ 13;
+    margin-bottom: 15px;
+  }
+
+  .bottom-horizantal-line {
+    height: 5px;
+    background: #fca311;
+    grid-row: 4;
+    grid-area: 4/1;
+    grid-column: 1/8;
+    margin-top: -17%;
+  }
+
+  .our-mission {
+    margin-top: 20px;
+    grid-row: 3;
+    grid-area: 4/7;
+    grid-column: 6/13;
+  }
+
+  .form-tackline {
+    margin-top: -56px;
+    grid-row: 3;
+    grid-area: 4/1;
+    grid-column: 1/5;
+  }
+
+  .brainnest-paregraph p {
+    text-align: justify;
+    line-height: 25px;
+    letter-spacing: 0.5s;
+    font-weight: 400;
+  }
+
+  .brainnest-paregraph::before {
+    top: -168px;
+    left: -35px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+
+  /* add this class navber when window will scroll */
+  /* .sticky .top-second-section {
+    margin-top: 19.8rem;
+  } */
+  .sticky .header-area .logo img {
+    width: 5.5rem;
+  }
+  /* add this class navber when window will scroll */
+
+  /* Header area css */
+  .top-navbar {
+    background: #14213d;
+  }
+
+  .header-area .logo img {
+    width: 6.5rem;
+  }
+
+  .header-area .top-navbar .d-flex {
+    position: static;
+    flex-direction: row;
+    row-gap: 3px;
+    text-align: start;
+    background: #14213d;
+    padding: 0px;
+    width: 100%;
+    height: 0%;
+    font-size: 1.2rem;
+    top: 0;
+    right: 0;
+    transform: translateX(0%);
+    box-sizing: border-box;
+  }
+
+  .sticky .top-navbar .d-flex {
+    background: black !important;
+  }
+
+  .header-area .top-navbar .d-flex:first-child {
+    padding-top: 0%;
+  }
+
+  .header-area .icon {
+    display: none;
+  }
+
+  /* About us section css */
+  .who-we-are {
+    grid-column: 1 /13;
+    grid-area: 1/1;
+    grid-column: 2/13;
+  }
+
+  .who-we-are h1 {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+  }
+
+  .about-us {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    grid-row: 3;
+    grid-area: 3/4;
+    grid-column: 5/8;
+    height: 250px;
+  }
+
+  .brainnest-paregraph {
+    margin-top: 35px;
+    grid-row: 2;
+    grid-area: 3/8;
+    grid-column: 8/ 12;
+    margin-bottom: 15px;
+  }
+
+  .about-us h2 {
+    font-size: 2.8rem;
+  }
+
+  .bottom-horizantal-line {
+    grid-row: 4;
+    grid-area: 4/1;
+    grid-column: 2/8;
+    margin-top: -2%;
+  }
+
+  .form-tackline {
+    margin-top: 4px;
+    grid-row: 3;
+    grid-area: 4/1;
+    grid-column: 2/5;
+  }
+
+  .top-horizantal-line {
+    display: block;
+    grid-row: 2;
+    grid-area: 2/1;
+    grid-column: 5/12;
+  }
+
+  .brainnest-paregraph::before,
+  .form-tackline::before {
+    height: 350px;
+  }
+
+  .brainnest-paregraph::before {
+    top: -200px;
+    left: -40px;
+  }
+
+  .our-mission {
+    margin-top: 50px;
+    grid-row: 3;
+    grid-area: 4/7;
+    grid-column: 7/13;
+  }
+
+  .our-mission h1 {
+    font-size: 3.5rem;
+  }
+
+  .form-tackline::before {
+    display: block;
+    top: -15%;
+  }
+
+  .card-groups-section .card-title .top-line {
+    margin-left: 10%;
+  }
+
+  .card-groups-section .card-title .top-line,
+  .card-groups-section .card-title .bottom-line {
+    width: 40%;
+    height: 5px;
+    background: white;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+
+  .header-area .logo img {
+    width: 7.5rem;
+  }
+
+  /* About us section css */
+  .about-us {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    grid-row: 3;
+    grid-area: 3/4;
+    grid-column: 5/8;
+    height: 250px;
+  }
+
+  .who-we-are h1 {
+    font-size: 3.5rem;
+    margin-bottom: 70px;
+  }
+
+  .form-tackline::before {
+    display: block;
+    top: -30%;
+  }
+
+  .brainnest-paregraph::before {
+    top: -225px;
+    left: -40px;
+  }
+
+  .about-us h2 {
+    font-size: 3.3rem;
+  }
+}
+
+/* Extra Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1400px) {
+  .header-area .logo img {
+    width: 8.5rem;
+  }
+
+  /* About us section css */
+  .who-we-are {
+    grid-column: 1 /13;
+    grid-area: 1/1;
+    grid-column: 3/13;
+  }
+
+  .about-us {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    grid-row: 3;
+    grid-area: 3/4;
+    grid-column: 5/8;
+    height: 310px;
+  }
+
+  .brainnest-paregraph p {
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 0.5s;
+    font-weight: 400;
+  }
+
+  .brainnest-paregraph {
+    margin-top: 35px;
+    grid-row: 2;
+    grid-area: 3/8;
+    grid-column: 8/ 12;
+    margin-bottom: 15px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  /* main area img css */
+
+  .img-section::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #14213d;
+  }
+
+  .main-area .img-section img {
+    width: 29.5rem;
+  }
+
+  /* form area css */
+
+  .main-area .contact-section .form-area label {
+    font-size: 1.2rem;
+  }
+
+  .main-area .contact-section .form-area .name label {
+    left: 15%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 8%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 9%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 17%;
+    top: 23%;
+  }
+
+  .main-area .contact-section .form-area input:focus ~ label {
+    top: 20%;
+    left: 14%;
+    color: #fca311;
+    font-size: 1.2rem;
+  }
+
+  .main-area .contact-section .form-area textarea:focus ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 20%;
+    font-size: 1.2rem;
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    top: 20%;
+    left: 14%;
+    color: #fca311;
+    font-size: 1.2rem;
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 20%;
+    font-size: 1.2rem;
+  }
+
+  /* map area css */
+  .map iframe {
+    height: 300px;
+  }
+}
+
+/* Extra small devices (phones, 467px and down) */
+@media only screen and (max-width: 467px) {
+  /* form area css */
+  .main-area .contact-section .form-area .name label {
+    left: 18%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 10%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 12%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 21%;
+    top: 23%;
+  }
+
+  .main-area .contact-section .form-area textarea:focus ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 23%;
+    /* font-size: 1.2rem; */
+  }
+
+  .main-area .contact-section .form-area input:focus ~ label {
+    color: #fca311;
+    top: 16%;
+    left: 20%;
+    /* font-size: 1.2rem; */
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    color: #fca311;
+    top: 16%;
+    left: 20%;
+    /* font-size: 1.2rem; */
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 23%;
+    /* font-size: 1.2rem; */
+  }
+}
+
+/* Extra small devices (phones, 394px and down) */
+@media only screen and (max-width: 394px) {
+  /* form area css */
+
+  .main-area .contact-section .form-area .name label {
+    left: 22%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 11%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 14%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 26%;
+    top: 23%;
+  }
+
+  .main-area .contact-section .form-area textarea:focus ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 23%;
+    /* font-size: 1.2rem; */
+  }
+
+  .main-area .contact-section .form-area input:focus ~ label {
+    color: #fca311;
+    top: 16%;
+    left: 20%;
+    /* font-size: 1.2rem; */
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    color: #fca311;
+    top: 16%;
+    left: 20%;
+    /* font-size: 1.2rem; */
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 23%;
+    /* font-size: 1.2rem; */
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* Header area css */
+
+  /* main area img css */
+  .main-area .img-section img {
+    width: 29.5rem;
+  }
+
+  .img-section::before {
+    height: 100%;
+  }
+
+  /* contact social css */
+  .main-area .social-area .germany {
+    margin-bottom: 4rem;
+  }
+
+  /* map css */
+  .map iframe {
+    height: 250px;
+  }
+
+  /* form area css */
+  .main-area .contact-section .form-area input:focus ~ label {
+    top: 20%;
+    left: 14%;
+    color: #fca311;
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    top: 20%;
+    left: 14%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  /* img section css */
+
+  .img-section::before {
+    height: 11rem;
+    top: 0;
+    left: 0;
+  }
+
+  .main-area .img-section img {
+    width: 30rem;
+    position: relative;
+    top: -3%;
+    left: -2%;
+    z-index: 9;
+  }
+
+  /* form area css */
+
+  .main-area .contact-section .form-area .name label {
+    left: 25%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 13%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 16%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 27%;
+    top: 23%;
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    top: 20%;
+    left: 20%;
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    left: 22%;
+    top: 8%;
+  }
+
+  .main-area .contact-section .form-area input:focus ~ label {
+    top: 20%;
+    left: 20%;
+  }
+
+  .main-area .contact-section .form-area textarea:focus ~ label {
+    left: 22%;
+    top: 8%;
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    left: 22%;
+    top: 8%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+
+  /* main section img area css */
+  .main-area .img-section img {
+    top: -4%;
+    left: -10%;
+    z-index: 9;
+  }
+
+  /* form area css */
+
+  .main-area .contact-section .form-area .name label {
+    left: 24%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 12%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 15%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 28%;
+    top: 23%;
+  }
+
+  .main-area .contact-section .form-area input:focus ~ label {
+    top: 20%;
+    left: 20%;
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    top: 20%;
+    left: 20%;
+  }
+
+  .main-area .contact-section .form-area textarea:focus ~ label {
+    left: 25%;
+    top: 8%;
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    color: #fca311;
+    top: 8%;
+    left: 25%;
+  }
+
+  /* map section css */
+  .map iframe {
+    height: 400px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* main area img section css */
+  .main-area .img-section img {
+    top: -6%;
+    left: -6%;
+    z-index: 9;
+    width: 34rem;
+  }
+
+  /* form area css */
+  .main-area .contact-section .form-area .name label {
+    left: 20%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 11%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 13%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 23%;
+    top: 23%;
+  }
+
+  .main-area .contact-section .form-area textarea:focus ~ label {
+    left: 20%;
+    top: 8%;
+  }
+
+  .main-area .contact-section .form-area input:focus ~ label {
+    top: 20%;
+    left: 16%;
+  }
+
+  .main-area
+    .contact-section
+    .form-area
+    textarea:not(:placeholder-shown)
+    ~ label {
+    left: 20%;
+    top: 8%;
+  }
+
+  .main-area .contact-section .form-area input:not(:placeholder-shown) ~ label {
+    top: 20%;
+    left: 16%;
+  }
+
+  /* map section css */
+  .map iframe {
+    height: 480px;
+  }
+}
+
+/* Extra Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+  /* main area img section css */
+  .main-area .img-section img {
+    top: -6%;
+    left: -4%;
+    z-index: 9;
+    width: 37rem;
+  }
+
+  /* form area css */
+  .main-area .contact-section .form-area .name label {
+    left: 17%;
+  }
+
+  .main-area .contact-section .form-area .email label {
+    left: 9%;
+  }
+
+  .main-area .contact-section .form-area .number label {
+    left: 11%;
+  }
+
+  .main-area .contact-section .form-area .text-area label {
+    left: 19%;
+    top: 23%;
+  }
+}
+
