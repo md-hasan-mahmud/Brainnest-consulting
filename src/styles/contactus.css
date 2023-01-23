@@ -50,11 +50,7 @@ body {
   font-weight: 400;
 }
 
-.header-area .d-flex a:nth-child(1) {
-  color: #fca311;
-}
-
-.active {
+.header-area .d-flex a.active {
   color: #fca311;
 }
 

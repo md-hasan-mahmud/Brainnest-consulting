@@ -133,16 +133,14 @@ number.addEventListener('keydown',function() {
 })
 
 
-// // icon bars click event
-//     iconBars.addEventListener('click',function() {
-//     header.classList.toggle('active')
-// })
+// icon bars click event
+    iconBars.addEventListener('click',function() {
+    header.classList.toggle('active')
+})
 
 
-// // icon xmark click event
-//     iconXmark.addEventListener('click',function() {
-//     header.classList.remove('active')
+// icon xmark click event
+    iconXmark.addEventListener('click',function() {
+    header.classList.remove('active')
         
-// })
-
-export default '../scripts/contactus'
+})

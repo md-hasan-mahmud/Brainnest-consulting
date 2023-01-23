@@ -110,17 +110,17 @@ body {
 
 /* top-second-section css  start*/
 
-/* .header-area #top-second-header {
+.header-area #top-second-header {
   transform: translateY(50%);
   opacity: 0;
   transition: 1.2s ease-in-out;
-} */
+}
 
 /* this class add top-second-header tag when window will be onload */
-/* .top-second-header-bottom-to-top-slide {
+.top-second-header-bottom-to-top-slide {
   transform: translateY(0%) !important;
   opacity: 1 !important;
-} */
+}
 
 .top-second-section h1 {
   color: #fca311;
@@ -178,17 +178,17 @@ body {
   background: rgb(24, 32, 50, 0.93);
 }
 
-/* .number-section .number-group {
+.number-section .number-group {
   transform: scale(0.2);
   opacity: 0;
   transition: 1s ease-in-out;
-} */
+}
 
 /* animation class add when window will be scroll */
-/* .numshow {
+.numshow {
   opacity: 1 !important;
   transform: scale(1) !important;
-} */
+}
 
 .number-section h1 {
   /* font-size: 90px; */
@@ -222,13 +222,13 @@ p {
 
 .who-we-are {
   grid-column: 2 /13;
-  /* opacity: 0;
-  transition: 2s ease-in-out; */
+  opacity: 0;
+  transition: 2s ease-in-out;
 }
 /* this class add who we are section when window will be scroll */
-/* .translateX {
+.translateX {
   opacity: 1 !important;
-} */
+}
 
 .who-we-are h1 {
   font-size: 3rem;
@@ -242,15 +242,15 @@ p {
   grid-row: 2;
   grid-area: 2/4;
   grid-column: 4/13;
-  /* transform: translateX(-80%);
+  transform: translateX(-80%);
   opacity: 0;
-  transition: 1s ease-in-out; */
+  transition: 1s ease-in-out;
 }
 /* this class add top horizantal section when window will be scroll */
-/* .top-horizantal-line-translateX {
+.top-horizantal-line-translateX {
   transform: translateX(0%);
   opacity: 1;
-} */
+}
 
 .about-us {
   background: #fca311;
@@ -264,17 +264,17 @@ p {
   height: 250px;
 }
 
-/* .about-us-content {
+.about-us-content {
   transform: translateX(-80%);
   opacity: 0;
   transition: 1s ease-in-out;
-} */
+}
 
 /* this class add about us section when window will be scroll */
-/* .content-translateX {
+.content-translateX {
   transform: translateX(0%);
   opacity: 1;
-} */
+}
 
 .bottom-horizantal-line {
   height: 5px;
@@ -282,16 +282,16 @@ p {
   grid-row: 4;
   grid-area: 3/1;
   grid-column: 1/7;
-  /* transform: translateX(-80%);
+  transform: translateX(-80%);
   opacity: 0;
-  transition: 1s ease-in-out; */
+  transition: 1s ease-in-out;
 }
 
 /* this class add bottom horizantal section when window will be scroll */
-/* .bottom-horizantal-translateX {
+.bottom-horizantal-translateX {
   transform: translateX(0%);
   opacity: 1;
-} */
+}
 
 .about-us h2 {
   text-transform: uppercase;
@@ -309,16 +309,16 @@ p {
   grid-row: 2;
   grid-area: 2/7;
   grid-column: 7/ 13;
-  /* transform: translateY(-60%);
+  transform: translateY(-60%);
   transition: 1s ease-in-out;
-  opacity: 0; */
+  opacity: 0;
 }
 
 /* this class add brainnest-paregraph section when window will be scroll */
-/* .brainnest-paregraph-translateY {
+.brainnest-paregraph-translateY {
   transform: translateY(0%);
   opacity: 1;
-} */
+}
 
 .brainnest-paregraph p {
   text-align: justify;
@@ -337,16 +337,16 @@ p {
   grid-row: 3;
   grid-area: 3/1;
   grid-column: 1/4;
-  /* transform: translateY(60%);
+  transform: translateY(60%);
   transition: 1s ease-in-out;
-  opacity: 0; */
+  opacity: 0;
 }
 
 /* this class add form-tackline section when window will be scroll */
-/* .form-tackline-translateY {
+.form-tackline-translateY {
   transform: translateY(0%);
   opacity: 1;
-} */
+}
 
 .form-tackline p {
   text-align: justify;
@@ -360,16 +360,16 @@ p {
   grid-row: 3;
   grid-area: 3/5;
   grid-column: 5/13;
-  /* transform: translateX(50%);
+  transform: translateX(50%);
   opacity: 0;
-  transition: 1s ease-in-out; */
+  transition: 1s ease-in-out;
 }
 
 /* this class add Our mission section when window will be scroll */
-/* .our-mission-translateX {
+.our-mission-translateX {
   transform: translateX(0%);
   opacity: 1;
-} */
+}
 
 .brainnest-paregraph,
 .form-tackline {
@@ -402,17 +402,17 @@ p {
 /* Commitment section css start */
 /* ****************************************** */
 
-/* .commitment #translate-y {
+.commitment #translate-y {
   transform: translateY(100%);
   opacity: 0;
   transition: 0.8s ease-in-out;
-} */
+}
 
 /* this class add in our commitment section  when window scroll  */
-/* .translateY {
+.translateY {
   opacity: 1 !important;
   transform: translateY(0%) !important;
-} */
+}
 
 .commitment {
   overflow: hidden;
@@ -467,42 +467,42 @@ h2 {
 
 .card-groups-section .card-title .top-line {
   margin-left: 15%;
-  /* opacity: 0;
+  opacity: 0;
   transform: translateX(-80%);
-  transition: 1s ease-in-out; */
+  transition: 1s ease-in-out;
 }
 
 /* this class add topline section when window will be scroll */
-/* .top-line-slide {
+.top-line-slide {
   opacity: 1 !important;
   transform: translateX(0%) !important;
-} */
+}
 
 .card-groups-section .card-title .bottom-line {
   margin-left: 50%;
-  /* opacity: 0;
+  opacity: 0;
   transform: translateX(80%);
-  transition: 1s ease-in-out; */
+  transition: 1s ease-in-out;
 }
 
 /* this class add bottomline section when window will be scroll */
-/* .bottom-line-slide {
+.bottom-line-slide {
   opacity: 1 !important;
   transform: translateX(0%) !important;
-} */
+}
 
 .card-groups-section .card-title h1 {
   /* font-size: 50px; */
   font-size: 3.34rem;
   color: #fca311;
-  /* opacity: 0;
-  transition: 2s ease-in-out; */
+  opacity: 0;
+  transition: 2s ease-in-out;
 }
 
 /* this class add card title h1 tag section when window will be scroll */
-/* .what-we-opacity {
+.what-we-opacity {
   opacity: 1 !important;
-} */
+}
 
 .card-groups-section .card-groups p {
   line-height: 35px;
@@ -521,9 +521,9 @@ h2 {
 }
 
 /* this class add card group card box section when window will be scroll */
-/* .opacity-none {
+.opacity-none {
   opacity: 0.2 !important;
-} */
+}
 /* card group section end */
 
 /* ****************************************** */
@@ -545,17 +545,17 @@ h2 {
   background: rgba(20, 33, 61, 0.9);
 }
 
-/* .business-section #business {
+.business-section #business {
   transform: translateX(80%);
   opacity: 0;
   transition: 1s ease-in-out;
-} */
+}
 
 /* this class add business content section when window will be scroll */
-/* .business-translateX {
+.business-translateX {
   opacity: 1 !important;
   transform: translateX(0%) !important;
-} */
+}
 
 .business-section h1 {
   font-size: 3rem;
@@ -583,39 +583,39 @@ h2 {
 
 #tursted {
   color: #fca311;
-  /* transform: translateX(-40%);
+  transform: translateX(-40%);
   opacity: 0;
-  transition: 1s ease-in-out; */
+  transition: 1s ease-in-out;
 }
 /* this class add tursted section when window will be scroll */
-/* .trusted-left-to-right-slide {
+.trusted-left-to-right-slide {
   transform: translateX(0%) !important;
   opacity: 1 !important;
-} */
+}
 
 .company-contact .divager {
   height: 200px;
   width: 5px;
-  /* transform: translateY(80%);
+  transform: translateY(80%);
   opacity: 0;
-  transition: 1s ease-in-out; */
+  transition: 1s ease-in-out;
 }
 /* this class add divager section when window will be scroll */
-/* .divager-bottom-top-slide {
+.divager-bottom-top-slide {
   transform: translateY(0%) !important;
   opacity: 1 !important;
-} */
+}
 
-/* .company-contact #img-group {
+.company-contact #img-group {
   transform: scale(0.1);
   transition: 1s ease-in-out;
   opacity: 0;
-} */
+}
 /* this class add img-group section when window will be scroll */
-/* .img-group-zoom-in {
+.img-group-zoom-in {
   transform: scale(1) !important;
   opacity: 1 !important;
-} */
+}
 
 .contact-area {
   background: #14213d;
@@ -687,11 +687,7 @@ body {
   font-weight: 400;
 }
 
-.header-area .d-flex a:nth-child(1) {
-  color: #fca311;
-}
-
-.active {
+.header-area .d-flex a.active {
   color: #fca311;
 }
 
