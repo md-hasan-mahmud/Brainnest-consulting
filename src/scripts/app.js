@@ -1,10 +1,10 @@
 
+
 // import "../scripts/contactus.js"
-import "../styles/style.css"
 import "../styles/contactus.css"
-import "../responsive-css/responsive.css"
+import "../styles/style.css"
 import "../responsive-css/responsive-contact-us.css"
-// import "../scripts/contactus.js"
+import "../responsive-css/responsive.css"
 
 // ********************
 //  * All Dom refarance
