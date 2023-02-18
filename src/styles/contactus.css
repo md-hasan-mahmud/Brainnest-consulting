@@ -322,11 +322,17 @@ body {
   z-index: 9;
 }
 /* form section end */
+/* ? map section css  */
+.main-area .map iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
 
 /* Main-area css end */
 
 /*===============Footer are css start================ */
-.footer-area p {
+.footer-area h6 {
   color: #fca311;
 }
 /*==============Footer are css end=================== */
